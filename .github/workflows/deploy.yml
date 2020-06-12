@@ -26,4 +26,7 @@ jobs:
       with:
         node-version: 12
     - name: Surge Installation
-      run: surge ./ hamza_khetran.surge.sh   
+      run: npm install -g surge
+      
+    - name: Run Surge
+      run: surge ./ hamza_khetran-bootcamp2020.surge.sh 
